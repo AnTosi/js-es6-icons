@@ -36,8 +36,9 @@ section {
 }
 
 .card {
-    width: 230px;
     height: 100px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px grey;
 }
 
 i {
