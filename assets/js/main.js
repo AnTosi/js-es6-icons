@@ -158,7 +158,7 @@ icons.forEach(icon => {
 function generateCard(icon) {
     return `<div class="card text-center col-2 d-flex flex-column justify-content-center my-4 mx-3">
     <div class="icon">
-        <i><i class="${icon.family} ${icon.prefix}${icon.name} ${icon.type}"></i></i>
+        <i><i class="${icon.family} ${icon.prefix}${icon.name}"></i></i>
     </div>
     <p class="text-center">
         ${icon.name.toUpperCase()}
