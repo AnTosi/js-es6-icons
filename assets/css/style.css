@@ -19,10 +19,27 @@ button {
     background-color: #BDE9F0;
 }
 
+.bg_transparent {
+    background-color: #29b0dd00;
+}
+
+.bg_grey {
+    background-color: #DDDDDD;
+}
+
 .weight_700 {
     font-weight: 700;
 }
 
-.bg_transparent {
-    background-color: #29b0dd00;
+section {
+    height: calc(100vh - 128px);
+}
+
+.card {
+    width: 230px;
+    height: 100px;
+}
+
+i {
+    font-size: 2.5rem;
 }
