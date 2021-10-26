@@ -151,18 +151,19 @@ icon = "";
 
 
 icons.forEach(icon => {
-    generateCard(icon);
-    document.getElementById("container").insertAdjacentHTML("beforeend", card)
+    document.getElementById("container").insertAdjacentHTML("beforeend", generateCard(icon))
     
 });
 
-function generateCard(icon,card) {
-    card = `<div class="card text-center col-2 d-flex flex-column justify-content-center my-4 mx-3">
+function generateCard(icon) {
+    return `<div class="card text-center col-2 d-flex flex-column justify-content-center my-4 mx-3">
     <div class="icon">
-        <i><i class="${icon.family} ${icon.prefix}${icon.name}"></i></i>
+        <i><i class="${icon.family} ${icon.prefix}${icon.name} ${icon.type}"></i></i>
     </div>
     <p class="text-center">
-        CAT
+        ${icon.name.toUpperCase()}
     </p>
     </div>`
 }
+
+//sto inserendo la milestone 2, aggiungo classe in base al tipo e assegno alla classe un colore nel css

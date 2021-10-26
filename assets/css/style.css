@@ -39,5 +39,10 @@ button {
 }
 
 i {
-    font-size: 2.5rem;
+    font-size: 2rem;
+}
+
+.card p {
+    font-size: 0.7rem;
+    font-weight: bold;
 }
