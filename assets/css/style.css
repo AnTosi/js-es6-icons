@@ -1,0 +1,21 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    color: #29B1DD;
+    font-size: 3rem;
+}
+
+button {
+    border: none;
+    background-color: #29b0dd00;
+}
+
+.bg_lightblue {
+    background-color: #29B1DD;
+}
+
+.weight_700 {
+    font-weight: 700;
+}

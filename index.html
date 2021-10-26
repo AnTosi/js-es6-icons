@@ -7,11 +7,31 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
-    <title>Document</title>
+    <title>Icons</title>
 </head>
 <body>
-    
+    <header>
+        <h1 class="px-3 weight_700">
+            FontIcons
+        </h1>
+        <div class="bg_lightblue text-center py-3">
+            <button id="filter">
+                <form action="/action_page.php">
+                    <label for="filter" class="px-2 text-white weight_700">FILTRA PER TIPO</label>
+                    <select id="icons" name="icons">
+                      <option value="all">All</option>
+                      <option value="animal">animal</option>
+                      <option value="vegetable">vegetable</option>
+                      <option value="user">user</option>
+                    </select>
+                </form>
+            </button>
+        </div>
+    </header>
 
     <script src="./assets/js/main.js">
     </script>
