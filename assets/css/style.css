@@ -9,13 +9,20 @@ h1 {
 
 button {
     border: none;
-    background-color: #29b0dd00;
 }
 
 .bg_lightblue {
     background-color: #29B1DD;
 }
 
+.bg_lighterblue {
+    background-color: #BDE9F0;
+}
+
 .weight_700 {
     font-weight: 700;
+}
+
+.bg_transparent {
+    background-color: #29b0dd00;
 }
