@@ -31,9 +31,6 @@ button {
     font-weight: 700;
 }
 
-section {
-    height: calc(100vh - 128px);
-}
 
 .card {
     height: 100px;
