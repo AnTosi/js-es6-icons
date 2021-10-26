@@ -118,8 +118,20 @@ let icons =
 	}
 ];
 
-var filter = document.getElementById("iconFilter").value;
-console.log(filter);
+let All = icons;
+filterValue = "all";
+const filter = document.getElementById("iconFilter");
+
+printer (filterValue, icons);
+
+let filterChange = document.getElementById("iconFilter").addEventListener("change", function (){
+	console.log(this.value);
+	let filterValue = this.value
+	console.log(filterValue);
+	printer (filterValue, icons)
+});
+
+
 
 // inzializzo icon
 
@@ -148,10 +160,20 @@ icon = "";
 // </div>`
 
 
+//creo array all che include tutti gli altri
+// rendo il ciclo for each una funzione "printer"
 
+
+function printer (filterValue, icons) {
+
+document.getElementById("container").innerHTML = "";
 
 icons.forEach(icon => {
-    document.getElementById("container").insertAdjacentHTML("beforeend", generateCard(icon))
+
+	if (filterValue == "all" ||
+		filterValue == icon.type)  {
+	document.getElementById("container").insertAdjacentHTML("beforeend", generateCard(icon));
+	}
     
 });
 
@@ -165,6 +187,20 @@ function generateCard(icon) {
     </p>
     </div>`
 }
+}
+
 
 //sto inserendo la milestone 2, aggiungo classe in base al tipo e assegno alla classe un colore nel css
 //ora che ho fatto le cartelle separate torno a fare quello che stavo facendo prima
+//quel metodo scritto sopra funzionava, faccio milestone 3
+// metto addeventlistener al select, ho trovato nella documentazione l'event "change" che dovrebbe fare al caso mio
+//
+// document.getElementById("iconFilter").addEventListener("change", function(){
+// 	icons.filter(filter == icon.type)	
+// })
+
+//creo funzione filter
+
+// function filter() {
+
+// }
