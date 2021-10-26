@@ -46,3 +46,15 @@ i {
     font-size: 0.7rem;
     font-weight: bold;
 }
+
+.animal {
+    color: #0000FF;
+}
+
+.vegetable {
+    color: #FFA500
+}
+
+.user {
+    color: #800080;
+}
